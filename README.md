@@ -34,22 +34,17 @@ The Jelinski-Moranda model assumes that the failure intensity is proportional to
 
 Failure intensity:
 
-text
-λ(i) = φ × (N0 - i)
-
+`λ(i) = φ  (N0 - i)`
 
 Reliability:
 
-text
-R(t) = exp(-λt)
-
+`R(t) = exp(-λt)`
 
 For the practical dataset:
 
-text
-R(100) = 0.8187
-MTTF = 500 hours
+`R(100) = 0.8187`
 
+`MTTF = 500 hours`
 
 ---
 
