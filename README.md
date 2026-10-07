@@ -144,19 +144,15 @@ The application runs on:
 
 The application provides:
 
-text
-GET /reliability
-
+`GET /reliability`
 
 Example request:
 
-bash
-curl "http://127.0.0.1:5055/reliabilityt=100&i=30&Ec=30"
-
+`curl "http://127.0.0.1:5055/reliability?t=100&i=30&Ec=30"`
 
 Example response:
 
-json
+```json
 {
   "corrected_errors": 30,
   "jelinski_moranda": {
