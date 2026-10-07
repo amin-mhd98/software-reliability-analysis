@@ -54,26 +54,20 @@ The Schuman model uses residual fault density per machine instruction.
 
 Residual fault density:
 
-text
 εr = (E0 - Ec) / I
-
 
 Failure intensity:
 
-text
 λ = Ks × εr
-
 
 Reliability:
 
-text
 R(t) = exp(-λt)
-
 
 For the practical dataset:
 
-text
 R(100) = 0.99998
+
 MTTF = 5,000,000 hours
 
 
