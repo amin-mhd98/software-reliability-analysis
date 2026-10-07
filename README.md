@@ -199,7 +199,7 @@ json
 
 ## Project Structure
 
-text
+```text
 software-reliability-analysis/
  src/
     reliability_models.py
