@@ -129,15 +129,13 @@ The reliability models are integrated into the VulnMart Flask application.
 
 Start the application:
 
-bash
-cd vulnmart
-python app.py
+`cd vulnmart`
 
+`python app.py`
 
 The application runs on:
 
-text
-http://127.0.0.1:5055
+`http://127.0.0.1:5055`
 
 
 ---
