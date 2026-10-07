@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ product['name'] }} - VulnMart{% endblock %}
+{% block content %}
+  <div class="card">
+    <h2>{{ product['name'] }}</h2>
+    <p>{{ product['description'] }}</p>
+    <div class="price">₹{{ "%.2f"|format(product['price']) }}</div>
+  </div>
+
+  <div class="card">
+    <h3>Reviews</h3>
+    {% for r in reviews %}
+      <div class="review">
+        <b>{{ r['username'] }}</b><br>
+        {{ r['comment']|safe }}
+      </div>
+    {% else %}
+      <p>No reviews yet. Be the first!</p>
+    {% endfor %}
+
+    <h4>Leave a review</h4>
+    <form method="POST" action="/product/{{ product['id'] }}/review">
+      <textarea name="comment" rows="3" placeholder="Write your review..."></textarea>
+      <button class="btn" type="submit">Submit Review</button>
+    </form>
+  </div>
+{% endblock %}

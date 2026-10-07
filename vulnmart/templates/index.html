@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}VulnMart - Shop{% endblock %}
+{% block content %}
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    {% for p in products %}
+      <div class="card product-card">
+        <h3>{{ p['name'] }}</h3>
+        <p>{{ p['description'] }}</p>
+        <div class="price">₹{{ "%.2f"|format(p['price']) }}</div>
+        <a class="btn" href="/product/{{ p['id'] }}">View & Review</a>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Order #{{ order['id'] }} - VulnMart{% endblock %}
+{% block content %}
+  <h2>Order #{{ order['id'] }}</h2>
+  {% if order %}
+    <div class="card">
+      <p><b>Product:</b> {{ order['product_name'] }}</p>
+      <p><b>Quantity:</b> {{ order['quantity'] }}</p>
+      <p><b>Shipping Address:</b> {{ order['shipping_address'] }}</p>
+      <p><b>Card ending in:</b> **** **** **** {{ order['card_last4'] }}</p>
+      <span class="badge">Order data belongs to user_id, ownership not verified</span>
+    </div>
+  {% else %}
+    <p>Order not found.</p>
+  {% endif %}
+{% endblock %}

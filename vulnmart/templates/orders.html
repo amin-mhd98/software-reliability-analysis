@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}My Orders - VulnMart{% endblock %}
+{% block content %}
+  <h2>My Orders</h2>
+  <div class="card">
+    <table>
+      <tr><th>Order ID</th><th>Product</th><th>Qty</th><th></th></tr>
+      {% for o in orders %}
+        <tr>
+          <td>#{{ o['id'] }}</td>
+          <td>{{ o['product_name'] }}</td>
+          <td>{{ o['quantity'] }}</td>
+          <td><a class="btn secondary" href="/order/{{ o['id'] }}">View</a></td>
+        </tr>
+      {% else %}
+        <tr><td colspan="4">No orders yet.</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+{% endblock %}
