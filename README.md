@@ -112,15 +112,12 @@ The Nelson-Corcoran model provides an intermediate estimate based on test runs a
 
 The project generates:
 
-text
 reliability_curves.png
-
 
 The graph compares the Jelinski-Moranda and Schuman models over operating time.
 
 Target reliability level:
 
-text
 R = 0.95
 
 
