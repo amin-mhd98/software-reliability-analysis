@@ -197,7 +197,8 @@ software-reliability-analysis/
 ## Technologies
 
 - Python
-- Flask- NumPy
+- Flask
+- NumPy
 - Matplotlib
 - Git
 - GitHub
