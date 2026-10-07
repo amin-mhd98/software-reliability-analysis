@@ -212,14 +212,13 @@ software-reliability-analysis/
  README.md
  .gitignore
 
-
+```
 ---
 
 ## Technologies
 
 - Python
-- Flask
-- NumPy
+- Flask- NumPy
 - Matplotlib
 - Git
 - GitHub
