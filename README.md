@@ -79,15 +79,14 @@ The Nelson-Corcoran model is a static software reliability model based on test e
 
 Nelson reliability estimate:
 
-text
 R = 1 - Σ (ni / Ni) × Pi
-
 
 Calculated results:
 
-text
-Nelson:     R = 0.9540
-Corcoran:   R = 0.9860
+Nelson: R = 0.9540
+
+Corcoran: R = 0.9860
+
 Simplified: R = 0.9700
 
 
